@@ -1,0 +1,15 @@
+name: CharacterCards
+main: me.ShermansWorld.CharacterCards.Main
+version: 2.2.2
+api-version: 1.19
+author: ShermansWorld
+softdepend: [Towny, MythicalRaces, Konquest, Magic, PlaceholderAPI]
+description: A character card plugin designed for RPG servers
+commands:
+  character:
+    description: Base command for character cards
+    aliases: [char]
+  charactercards:
+    description: Base command for admins
+  uuid:
+    description: Look at your UUID

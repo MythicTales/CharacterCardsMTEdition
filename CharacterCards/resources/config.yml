@@ -1,0 +1,73 @@
+# ========================================
+# |    CharacterCards by ShermansWorld   |
+# ========================================
+
+# Report bugs at https://github.com/ShermansWorld/CharacterCards
+
+config-version: 8
+
+# =====================================
+# |          LANGUAGE SETTINGS        |
+# =====================================
+
+# Interested in translating CharacterCards into another language? 
+# Make a post in https://github.com/ShermansWorld/CharacterCards/issues, include "[LANG]" in the title!
+# You can also create a new language file locally and it will most likely work. Make sure to follow the spacing and general format!
+
+lang: "enUS"
+# Possible languages: "enUS" for English (United States), "ro" for Romanian, "ptBR" for Brazilian Portuguese
+# Changing languages requires a server restart
+
+# =====================================
+# |      CHARACTER CARD SETTINGS      |
+# =====================================
+
+# Settings for what players can input into their character cards
+# Character cards are for enhancing the RPG experience and are purely aesthetic
+
+MinAge: 14
+# The minimum age a player can make their character
+
+MaxAge: 120
+# The maximum age a player can make their character
+
+DescCharLimit: 512
+# Defines how long a player's description can be. Default is 512 or 2 full chat messages
+
+CustomFields:
+  1:
+    label: '&3Balance'
+    placeholder: '&b%vault_eco_balance_formatted%'
+# You can now define as many custom fields as you want ro be added to the character cards. Number them starting with "1:"
+# To clear all custom fields replace this section with "CustomFields: []"
+# These custom fields are DEPENDENT on PlaceholderAPI (PAPI). You must have it installed for these placeholders to work!
+# To get the above placeholder to work run /papi ecloud download vault, /papi reload
+
+# =====================================
+# |         INTERACT SETTINGS         |
+# =====================================
+
+ShiftRightClick: true
+# Displays a player's character card when a player shift + right clicks them
+
+RightClickPaper: true
+# Displays a player's character card when a player right clicks them with paper in their hand 
+
+# =====================================
+# |              HOOKS                |
+# =====================================
+
+IntegratePAPI: true
+# If your server is running PlaceholderAPI (PAPI), then the custom fields feature will be enabled and added to the player's card
+
+IntegrateTowny: true
+# If your server is running Towny then a player's Town/Nation is added to their character card
+
+IntegrateMythicalRaces: true
+# If your server is running Mythical Races then a player's Race is added to their character card
+
+IntegrateKonquest: true
+# If your server is running Konquest then a player's Kingdom is added to their character card
+
+IntegrateMagic: true
+# If your server is running Magic plugin then a player's progression path(Beginner, Student, Apprentice, Master, etc)is added to their character card
